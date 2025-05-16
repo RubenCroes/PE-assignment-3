@@ -1,0 +1,5 @@
+aws_region    = "us-east-1"
+rds_username  = "flaskuser"
+rds_password  = "yourStrongPassword123!"
+rds_db_name   = "flaskdb"
+ecr_image_url = "339712812036.dkr.ecr.us-east-1.amazonaws.com/flask-app:latest"

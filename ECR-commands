@@ -1,0 +1,11 @@
+aws ecr create-repository --repository-name flask-app
+docker build -t flask-app .
+docker tag flask-app:latest 339712812036.dkr.ecr.us-east-1.amazonaws.com/flask-app:latest
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 339712812036.dkr.ecr.us-east-1.amazonaws.com
+docker push 339712812036.dkr.ecr.us-east-1.amazonaws.com/flask-app:latest
+
+
+# UPDATE Terraform
+variable "ecr_image_url" {
+  default = "339712812036.dkr.ecr.us-east-1.amazonaws.com/flask-app:latest"
+}
