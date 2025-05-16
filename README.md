@@ -3,14 +3,10 @@
 ## 1. Clone the Repo
 
 ```
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/RubenCroes/PE-assignment-3.git
 
 cd your-repo
 ```
-
-git clone https://github.com/your-username/your-repo.git
-
-cd your-repo
 
 ### 2. Build and Push Docker Image
 
