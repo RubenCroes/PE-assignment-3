@@ -4,8 +4,6 @@
 
 ```
 git clone https://github.com/RubenCroes/PE-assignment-3.git
-
-cd your-repo
 ```
 
 ### 2. Build and Push Docker Image
